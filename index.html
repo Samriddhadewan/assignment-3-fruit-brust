@@ -25,6 +25,7 @@
             colors: {
               clifford: '#da373d',
               'primary-color': '#F85559',
+              'footer-dark': '#121212',
             }
           }
         }
@@ -39,7 +40,7 @@
   </head>
   <body class="font-lato">
     <header class="container mx-auto py-4 items-center">
-      <nav class="flex rounded-full bg-primary-color	 border-indigo-600 justify-between p-5 px-7 ">
+      <!-- <nav class="flex rounded-full bg-primary-color	 border-indigo-600 justify-between p-5 px-7 ">
         <div class=" items-center lg:flex lg:gap-5 lg:list-none hidden text-base text-white">
           <li>Home</li>
           <li>Contact</li>
@@ -60,7 +61,53 @@
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
           </button>
         </div>
+      </nav> -->
+
+      <nav class="px-4">
+        <div class="navbar max-w-[1366px] mx-auto my-5 md:my-8 lg:p-6 md:rounded-full justify-between md:bg-primary-color md:text-white">
+          <div class="navbar-start hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-lg">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="lg:hidden">
+            <img src="./images/logo.png" alt="" class="w-10">
+            <a class="btn btn-ghost text-2xl font-bold capitalize">Fruit Burst</a>
+          </div>
+          <div class="navbar-end lg:hidden">
+            <div class="dropdown dropdown-end">
+              <label tabindex="0" class="btn btn-ghost">
+                <i class="fa-solid fa-bars text-xl"></i>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black">
+                <li><a class="text-lg">Home</a></li>
+                <li><a class="text-lg">About Us</a></li>
+                <li><a class="text-lg">Shop</a></li>
+                <li><a class="text-lg">All Fruits</a></li>
+                <div class="form-control w-full justify-center relative mt-2">
+                  <input type="text" placeholder="Search here" class="input input-bordered md:w-auto rounded-full text-sm" />
+                  <i class="fa-solid fa-magnifying-glass absolute text-xl text-fruit-dark right-0 mr-4"></i>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <div class="hidden lg:flex">
+            <img src="./images/logo.png" alt="" class="w-12">
+            <a class="btn btn-ghost text-4xl font-bold capitalize">Fruit Burst</a>
+          </div>
+          <div class="navbar-end hidden lg:flex">
+            <div class="form-control w-72 justify-center relative">
+              <input type="text" placeholder="Search here" class="input input-bordered md:w-auto rounded-full text-sm text-black" />
+              <i class="fa fa-search absolute text-xl text-fruit-dark right-0 mr-4"></i>
+            </div>
+          </div>
+        </div>
       </nav>
+
+
       <!-- banner section here  -->
       <div class="carousel pt-12 w-full">
         <!-- slide 1 -->
@@ -235,77 +282,158 @@
       <button class="bg-primary-color px-6 py-4 rounded-md text-white">Shop now </button>
      </div>
 
-     <!-- meet our team section  -->
-     <section style="background-image: url(./images/team.png);" class="h-[90vh] w-full bg-cover bg-center bg-no-repeat my-12 ">
-      <div class="hero-overlay bg-opacity-60">
-        <div class="text-white text-center pt-2 lg:pt-36">
-          <h1 class="text-4xl font-bold">Meet the team section</h1>
-          <p class=" py-1 lg:py-6"	>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
-        </div>
-        <div class="flex flex-col lg:flex-row md:flex-row justify-around lg:pt-12 pr-3 items-center gap-1">
-          <!-- first person  -->
-          <div class="w-[30%] ">
-            <div class="text-center">
-              <div class="avatar">
-                <div class="lg:w-full w-14 rounded-full">
-                  <img src="./images/member1.png" />
-                </div>
-              </div>
-              <p class="text-white font-bold text-sm lg:text-xl">anwar hossian</p>
-              <p class="text-white font-normal text-xs lg:text-sm py-0 lg:py-1">Fruits Expert</p>
-              <a class="text-primary-color text-sm lg:text-2xl" href=""><i class="fa-brands fa-facebook"></i></a>
-              <a class="text-primary-color text-sm lg:text-2xl" href=""><i class="fa-brands fa-twitter px-2"></i></a>
-              <a class="text-primary-color text-sm lg:text-2xl" href=""><i class="fa-brands fa-linkedin"></i><a>
-            </div>
-          </div>
-          <div class=" w-[30%]">
-            <div class="text-center">
-              <div class="avatar">
-                <div class="lg:w-full w-14 rounded-full">
-                  <img src="./images/member2.png" />
-                </div>
-              </div>
-              <p class="text-white font-bold text-sm lg:text-xl">Safia Chowdhury</p>
-              <p class="text-white font-normal text-xs lg:text-sm py-0 lg:py-1">Fruits Expert</p>
-              <a class="text-primary-color text-sm lg:text-2xl" href=""><i class="fa-brands fa-facebook"></i></a>
-              <a class="text-primary-color text-sm lg:text-2xl" href=""><i class="fa-brands fa-twitter px-2"></i></a>
-              <a class="text-primary-color text-sm lg:text-2xl" href=""><i class="fa-brands fa-linkedin"></i><a>
-            </div>
-          </div>
-          <div class="  w-[30%]">
-            <div class="text-center">
-              <div class="avatar">
-                <div class="lg:w-full w-14 rounded-full">
-                  <img src="./images/member3.png" />
-                </div>
-              </div>
-              <p class="text-white font-boldtext-sm lg:text-xl">Rokib Hossain</p>
-              <p class="text-white font-normal text-xs lg:text-sm py-0 lg:py-1">Fruits Expert</p>
-              <a class="text-primary-color text-sm lg:text-2xl" href=""><i class="fa-brands fa-facebook"></i></a>
-              <a class="text-primary-color text-sm lg:text-2xl" href=""><i class="fa-brands fa-twitter px-2"></i></a>
-              <a class="text-primary-color text-sm lg:text-2xl" href=""><i class="fa-brands fa-linkedin"></i><a>
-            </div>
-          </div>
-          <div class=" w-[30%]">
-            <div class="text-center">
-              <div class="avatar">
-                <div class="lg:w-full w-14 rounded-full">
-                  <img src="./images/member4.png" />
-                </div>
-              </div>
-              <p class="text-white font-bold text-sm lg:text-xl">Chaity</p>
-              <p class="text-white font-normal text-xs lg:text-sm py-0 lg:py-1">Fruits Expert</p>
-              <a class="text-primary-color text-sm lg:text-2xl" href=""><i class="fa-brands fa-facebook"></i></a>
-              <a class="text-primary-color text-sm lg:text-2xl" href=""><i class="fa-brands fa-twitter px-2"></i></a>
-              <a class="text-primary-color text-sm lg:text-2xl" href=""><i class="fa-brands fa-linkedin"></i><a>
-            </div>
-          </div>
-        </div>
-      </div>
-     </section>
-    </main>
-    <footer>
+     <!-- meet our team section -->
+     <section class="my-20 md:my-28">
+			<div class="hero lg:h-[675px] rounded-xl bg-cover bg-no-repeat" style="background-image: url('./images/team.png');">
+				<div class="hero-overlay bg-black bg-opacity-60 rounded-xl"></div>
+				<div class="hero-content py-20 text-center text-white block">
+					<div class="mb-16">
+						<h1 class="mb-5 text-5xl font-bold">Meet Our Team</h1>
+						<p class="mb-5 lg:w-3/5 mx-auto">Let us introduce you to our professional farming & gardening experts who grow, take care and bring the delicious fruits you enjoy.</p>
+					</div>
+					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-between gap-y-12">
+						<div class="flex flex-col justify-center">
+							<img src="./images/member1.png" alt="" class="w-[140px] mx-auto">
+							<h4 class="mt-6 text-2xl font-semibold">Imran Hossain</h4>
+							<p class="my-2">Founder & CEO</p>
+							<div class="mt-2 space-x-2">
+								<a href="#"><i class="fa-brands fa-facebook h-9 w-9 leading-9 text-xl bg-fruit-primary rounded-full"></i></a>
+								<a href="#"><i class="fa-brands fa-twitter  h-9 w-9 leading-9 text-xl bg-fruit-primary rounded-full"></i></a>
+								<a href="#"><i class="fa-brands fa-linkedin h-9 w-9 leading-9 text-xl bg-fruit-primary rounded-full"></i></a>
+							</div>
+						</div>
+						<div class="flex flex-col justify-center">
+							<img src="./images/member2.png" alt="" class="w-[140px] mx-auto">
+							<h4 class="mt-6 text-2xl font-semibold">Safia Chowdhury</h4>
+							<p class="my-2">Fruits Expert</p>
+							<div class="mt-2 space-x-2">
+								<a href="#"><i class="fa-brands fa-facebook h-9 w-9 leading-9 text-xl bg-fruit-primary rounded-full"></i></a>
+								<a href="#"><i class="fa-brands fa-twitter  h-9 w-9 leading-9 text-xl bg-fruit-primary rounded-full"></i></a>
+								<a href="#"><i class="fa-brands fa-linkedin h-9 w-9 leading-9 text-xl bg-fruit-primary rounded-full"></i></a>
+							</div>
+						</div>
+						<div class="flex flex-col justify-center">
+							<img src="./images/member3.png" alt="" class="w-[140px] mx-auto">
+							<h4 class="mt-6 text-2xl font-semibold">Rokib Hossain</h4>
+							<p class="my-2">Sales Manager</p>
+							<div class="mt-2 space-x-2">
+								<a href="#"><i class="fa-brands fa-facebook h-9 w-9 leading-9 text-xl bg-fruit-primary rounded-full"></i></a>
+								<a href="#"><i class="fa-brands fa-twitter  h-9 w-9 leading-9 text-xl bg-fruit-primary rounded-full"></i></a>
+								<a href="#"><i class="fa-brands fa-linkedin h-9 w-9 leading-9 text-xl bg-fruit-primary rounded-full"></i></a>
+							</div>
+						</div>
+						<div class="flex flex-col justify-center">
+							<img src="./images/member4.png" alt="" class="w-[140px] mx-auto">
+							<h4 class="mt-6 text-2xl font-semibold">Chaity Hasan</h4>
+							<p class="my-2">Fruits Expert</p>
+							<div class="mt-2 space-x-2">
+								<a href="#"><i class="fa-brands fa-facebook h-9 w-9 leading-9 text-xl bg-fruit-primary rounded-full"></i></a>
+								<a href="#"><i class="fa-brands fa-twitter  h-9 w-9 leading-9 text-xl bg-fruit-primary rounded-full"></i></a>
+								<a href="#"><i class="fa-brands fa-linkedin h-9 w-9 leading-9 text-xl bg-fruit-primary rounded-full"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
+
+
+          <!-- why choose us section  -->
+
+     <section class="my-20 md:my-28">
+			<h2 class="text-4xl lg:text-5xl text-fruit-dark font-bold text-center">Why Choose Us</h2>
+			<p class="w-5/6 lg:w-3/6 mt-6 mb-10 mx-auto text-center text-gray-600">Welcome to Fruit Burst! We take pride in offering the finest selection of high-quality, ripe, and delicious fruits to our customers.</p>
+			<div class="flex flex-col lg:flex-row gap-y-8">
+				<div class="lg:hidden flex justify-center items-center mx-auto">
+					<img src="./images/whychoose1.png" alt="">
+				</div>
+				<div class="flex flex-col justify-between items-center gap-12 text-center lg:text-left px-8 lg:px-0">
+					<div class="flex flex-col lg:flex-row items-center gap-8">
+						<div><i class="fa-solid fa-users h-16 w-16 bg-gray-200 rounded-full text-lg text-center leading-[4rem]"></i></div>
+						<div class="lg:relative">
+							<h3 class="text-2xl font-bold mb-2">Dedicated Team</h3>
+							<div class="lg:absolute border-b border-gray-300 mx-auto w-28 left-0"></div>
+							<p class="text-gray-600 mt-4">Professional employees are there for you to pick the most fresh fruits.</p>
+						</div>
+					</div>
+					<div class="flex flex-col lg:flex-row items-center gap-8">
+						<div><i class="fa-solid fa-heart-circle-check h-16 w-16 bg-gray-200 rounded-full text-lg text-center leading-[4rem]"></i></div>
+						<div class="lg:relative">
+							<h3 class="text-2xl font-bold mb-2">Fresh is Best</h3>
+							<div class="lg:absolute border-b border-gray-300 mx-auto w-28 left-0"></div>
+							<p class="text-gray-600 mt-4">Freshness redefined: handpicked nature's bounty, delivered to you.</p>
+						</div>
+					</div>
+					<div class="flex flex-col lg:flex-row items-center gap-8">
+						<div><i class="fa-solid fa-gift h-16 w-16 bg-gray-200 rounded-full text-lg text-center leading-[4rem]"></i></div>
+						<div class="lg:relative">
+							<h3 class="text-2xl font-bold mb-2">Gift Certificates</h3>
+							<div class="lg:absolute border-b border-gray-300 mx-auto w-28 left-0"></div>
+							<p class="text-gray-600 mt-4">Share the joy of nature's treats with your loved ones today.</p>
+						</div>
+					</div>
+				</div>
+				<div class="hidden lg:flex w-3/4 justify-center items-center mx-auto">
+					<img src="./images/whychoose1.png" alt="">
+				</div>
+				<div class="flex flex-col justify-between items-center gap-12 text-center lg:text-right px-8 lg:px-0">
+					<div class="flex flex-col lg:flex-row-reverse items-center gap-8">
+						<div><i class="fa-solid fa-lemon h-16 w-16 bg-gray-200 rounded-full text-lg text-center leading-[4rem]"></i></div>
+						<div class="lg:relative">
+							<h3 class="text-2xl font-bold mb-2">Integrated Supplier</h3>
+							<div class="lg:absolute border-b border-gray-300 mx-auto w-28 right-0"></div>
+							<p class="text-gray-600 mt-4">Seamless sourcing: your trusted integrated fruit supplier solution.</p>
+						</div>
+					</div>
+					<div class="flex flex-col lg:flex-row-reverse items-center gap-8">
+						<div><i class="fa-solid fa-ice-cream h-16 w-16 bg-gray-200 rounded-full text-lg text-center leading-[4rem]"></i></div>
+						<div class="lg:relative">
+							<h3 class="text-2xl font-bold mb-2">Sustainable Practice</h3>
+							<div class="lg:absolute border-b border-gray-300 mx-auto w-28 right-0"></div>
+							<p class="text-gray-600 mt-4">Harvesting delight: protect nature with sustainable practices!</p>
+						</div>
+					</div>
+					<div class="flex flex-col lg:flex-row-reverse items-center gap-8">
+						<div><i class="fa-solid fa-thumbs-up h-16 w-16 bg-gray-200 rounded-full text-lg text-center leading-[4rem]"></i></div>
+						<div class="lg:relative">
+							<h3 class="text-2xl font-bold mb-2">The Benefits Only</h3>
+							<div class="lg:absolute border-b border-gray-300 mx-auto w-28 right-0"></div>
+							<p class="text-gray-600 mt-4">Nature's exclusive: savor the delights of unique fruit benefits!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+    </main>
+    <footer class="py-16 px-4 lg:py-32 bg-footer-dark text-white">
+      <div class="flex justify-center items-center">
+        <img src="./images/logo.png" alt="" class="w-12 inline">
+        <a class="btn btn-ghost text-4xl font-bold capitalize">Fruit Burst</a>
+      </div>
+      <div class="my-10 flex lg:flex-row text-center justify-center gap-x-3 lg:gap-x-5">
+        <ul class="flex gap-x-3 lg:gap-x-5 flex-wrap justify-center">
+          <li><a class="btn btn-ghost capitalize text-lg" href="#">Home</a></li>
+          <li><a class="btn btn-ghost capitalize text-lg" href="#">About Us</a></li>
+          <li><a class="btn btn-ghost capitalize text-lg" href="#">Shop</a></li>
+          <li><a class="btn btn-ghost capitalize text-lg" href="#">All Fruits</a></li>
+          <li><a class="btn btn-ghost capitalize text-lg" href="#">Support</a></li>
+          <li><a class="btn btn-ghost capitalize text-lg" href="#">My Account</a></li>
+        </ul>
+      </div>
+      <div class="flex flex-col lg:flex-row justify-center gap-x-2 gap-y-5 my-6">
+        <ul class="flex flex-wrap gap-2 justify-center">
+          <li><a class="btn btn-ghost text-4xl hover:text-sky-400"  href="#"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a class="btn btn-ghost text-4xl hover:text-blue-600" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a class="btn btn-ghost text-4xl hover:text-red-600"  href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+        <ul class="flex flex-wrap gap-2 justify-center">
+          <li><a class="btn btn-ghost text-4xl hover:text-sky-600"  href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a class="btn btn-ghost text-4xl hover:text-pink-600" href="#"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a class="btn btn-ghost text-4xl hover:text-gray-500" href="#"><i class="fa-brands fa-apple"></i></a></li>
+        </ul>
+      </div>
+      <p class="text-sm text-center text-gray-400 mt-12">© 2023 All Rights Reserved. Fruit Burst Bangladesh.</p>
     </footer>
   </body>
 </html>
